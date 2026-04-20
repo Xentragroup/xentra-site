@@ -1,4 +1,7 @@
 import SectionWrapper from "./components/SectionWrapper";
+import FunnelSection from "./components/FunnelSection";
+import ScaleSystemSection from "./components/ScaleSystemSection";
+import SystemMetricsSection from "./components/SystemMetricsSection";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -177,39 +180,17 @@ export default function HomePage() {
         </div>
       </SectionWrapper>
 
-      <div className="max-w-5xl mx-auto px-6">
-        <hr className="border-gray-100" />
-      </div>
+      {/* Funnel Visual */}
+      <FunnelSection />
 
-      {/* Personal Brand */}
-      <SectionWrapper className="py-20">
-        <div className="max-w-2xl">
-          <p className="text-xs font-semibold uppercase tracking-widest text-rose-400 mb-4">
-            The bigger picture
-          </p>
-          <h2 className="text-3xl font-semibold tracking-tight text-gray-900 mb-6">
-            Long-term brand beats short-term money.
-          </h2>
-          <div className="space-y-4 text-gray-600 leading-relaxed">
-            <p>
-              TikTok and Instagram aren&apos;t just platforms — they&apos;re
-              tools for building an audience that trusts you.
-            </p>
-            <p>
-              That attention, when funnelled properly into OnlyFans, creates
-              compounding income that doesn&apos;t depend on luck.
-            </p>
-            <p>
-              We help you think beyond this month. The creators who win
-              long-term are the ones building a personal brand — not just
-              posting content.
-            </p>
-          </div>
-        </div>
-      </SectionWrapper>
+      {/* How We Scale System */}
+      <ScaleSystemSection />
+
+      {/* System / Metrics Grid */}
+      <SystemMetricsSection />
 
       {/* Final CTA */}
-      <section className="bg-gray-50">
+      <section className="bg-white">
         <SectionWrapper className="py-24 text-center">
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900 mb-4">
             Ready to take this seriously?
