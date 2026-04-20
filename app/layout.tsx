@@ -9,10 +9,33 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
+const BASE_URL = "https://xentragroup.co.uk";
+
 export const metadata: Metadata = {
-  title: "Xentra Group — OnlyFans Management Agency",
+  metadataBase: new URL(BASE_URL),
+  title: {
+    default: "Xentra Group — OnlyFans Management Agency",
+    template: "%s | Xentra Group",
+  },
   description:
     "We help creators turn OnlyFans into real income. No bad agencies, no guessing — just structure, consistency, and growth.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png" }],
+  },
+  manifest: "/site.webmanifest",
+  openGraph: {
+    title: "Xentra Group — OnlyFans Management Agency",
+    description:
+      "We help creators turn OnlyFans into real income. No bad agencies, no guessing — just structure, consistency, and growth.",
+    url: BASE_URL,
+    siteName: "Xentra Group",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
