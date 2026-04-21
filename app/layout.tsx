@@ -19,14 +19,6 @@ export const metadata: Metadata = {
   },
   description:
     "We help creators turn OnlyFans into real income. No bad agencies, no guessing — just structure, consistency, and growth.",
-  icons: {
-    icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-    ],
-    apple: [{ url: "/apple-touch-icon.png" }],
-  },
   manifest: "/site.webmanifest",
   openGraph: {
     siteName: "Xentra Group",
@@ -38,6 +30,7 @@ export const metadata: Metadata = {
   },
 };
 
+// JSON-LD goes in body — Next.js does not support arbitrary head injection via layout
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -46,7 +39,6 @@ const organizationSchema = {
   email: "admin@xentragroup.co.uk",
   description:
     "OnlyFans management agency helping creators build consistent, growing income through strategy, brand, and professional management.",
-  sameAs: [],
 };
 
 export default function RootLayout({
@@ -56,13 +48,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} h-full`}>
-      <head>
+      <body className="min-h-full flex flex-col bg-white text-gray-900">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-      </head>
-      <body className="min-h-full flex flex-col bg-white text-gray-900">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
