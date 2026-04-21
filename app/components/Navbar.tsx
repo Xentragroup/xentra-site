@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
@@ -24,7 +24,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/apply"
-            className="bg-rose-400 hover:bg-rose-500 text-white px-5 py-2 rounded-full transition-colors text-sm font-medium"
+            className="bg-rose-500 hover:bg-rose-400 text-white px-5 py-2 rounded-full transition-colors text-sm font-medium"
           >
             Apply
           </Link>
