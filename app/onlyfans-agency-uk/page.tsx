@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: "OnlyFans Agency UK — Professional Creator Management | Xentra Group",
   description:
     "Looking for an OnlyFans agency in the UK? Xentra Group is a UK-based management agency helping creators build consistent income through structure and strategy.",
+  alternates: { canonical: "/onlyfans-agency-uk" },
+  openGraph: {
+    title: "OnlyFans Agency UK — Professional Creator Management | Xentra Group",
+    description:
+      "Looking for an OnlyFans agency in the UK? Xentra Group is a UK-based management agency helping creators build consistent income through structure and strategy.",
+    url: "/onlyfans-agency-uk",
+    siteName: "Xentra Group",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "OnlyFans Agency UK — Professional Creator Management | Xentra Group",
+    description:
+      "Looking for an OnlyFans agency in the UK? Xentra Group is a UK-based management agency helping creators build consistent income through structure and strategy.",
+  },
 };
 
 export default function Page() {

@@ -4,7 +4,23 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About — Xentra Group",
-  description: "A small, focused team helping OnlyFans creators grow with structure.",
+  description:
+    "A small, focused team helping OnlyFans creators grow with structure.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About — Xentra Group",
+    description:
+      "A small, focused team helping OnlyFans creators grow with structure.",
+    url: "/about",
+    siteName: "Xentra Group",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About — Xentra Group",
+    description:
+      "A small, focused team helping OnlyFans creators grow with structure.",
+  },
 };
 
 export default function AboutPage() {

@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: "Why Am I Not Making Money on OnlyFans? | Xentra Group",
   description:
     "Most creators struggle on OnlyFans for the same fixable reasons. Here's an honest breakdown of what's actually going wrong — and what changes things.",
+  alternates: { canonical: "/why-am-i-not-making-money-on-onlyfans" },
+  openGraph: {
+    title: "Why Am I Not Making Money on OnlyFans? | Xentra Group",
+    description:
+      "Most creators struggle on OnlyFans for the same fixable reasons. Here's an honest breakdown of what's actually going wrong — and what changes things.",
+    url: "/why-am-i-not-making-money-on-onlyfans",
+    siteName: "Xentra Group",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Why Am I Not Making Money on OnlyFans? | Xentra Group",
+    description:
+      "Most creators struggle on OnlyFans for the same fixable reasons. Here's an honest breakdown of what's actually going wrong — and what changes things.",
+  },
 };
 
 export default function SeoPage() {

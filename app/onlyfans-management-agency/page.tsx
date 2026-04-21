@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: "OnlyFans Management Agency — What They Do and Whether You Need One",
   description:
     "What does an OnlyFans management agency actually do? This is an honest breakdown of how management works, what it costs, and how to know if it's right for you.",
+  alternates: { canonical: "/onlyfans-management-agency" },
+  openGraph: {
+    title: "OnlyFans Management Agency — What They Do and Whether You Need One",
+    description:
+      "What does an OnlyFans management agency actually do? This is an honest breakdown of how management works, what it costs, and how to know if it's right for you.",
+    url: "/onlyfans-management-agency",
+    siteName: "Xentra Group",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "OnlyFans Management Agency — What They Do and Whether You Need One",
+    description:
+      "What does an OnlyFans management agency actually do? This is an honest breakdown of how management works, what it costs, and how to know if it's right for you.",
+  },
 };
 
 export default function Page() {

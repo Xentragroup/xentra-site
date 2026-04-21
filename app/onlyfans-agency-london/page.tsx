@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: "OnlyFans Agency London & England | Xentra Group",
   description:
     "Xentra Group works with OnlyFans creators across London and England. UK-based management focused on real income growth through structure, brand, and strategy.",
+  alternates: { canonical: "/onlyfans-agency-london" },
+  openGraph: {
+    title: "OnlyFans Agency London & England | Xentra Group",
+    description:
+      "Xentra Group works with OnlyFans creators across London and England. UK-based management focused on real income growth through structure, brand, and strategy.",
+    url: "/onlyfans-agency-london",
+    siteName: "Xentra Group",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "OnlyFans Agency London & England | Xentra Group",
+    description:
+      "Xentra Group works with OnlyFans creators across London and England. UK-based management focused on real income growth through structure, brand, and strategy.",
+  },
 };
 
 export default function Page() {

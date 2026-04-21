@@ -1,8 +1,30 @@
+import type { Metadata } from "next";
 import SectionWrapper from "./components/SectionWrapper";
 import FunnelSection from "./components/FunnelSection";
 import ScaleSystemSection from "./components/ScaleSystemSection";
 import SystemMetricsSection from "./components/SystemMetricsSection";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Xentra Group — OnlyFans Management Agency",
+  description:
+    "We help creators turn OnlyFans into real income. No bad agencies, no guessing — just structure, consistency, and growth.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Xentra Group — OnlyFans Management Agency",
+    description:
+      "We help creators turn OnlyFans into real income. No bad agencies, no guessing — just structure, consistency, and growth.",
+    url: "/",
+    siteName: "Xentra Group",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Xentra Group — OnlyFans Management Agency",
+    description:
+      "We help creators turn OnlyFans into real income. No bad agencies, no guessing — just structure, consistency, and growth.",
+  },
+};
 
 export default function HomePage() {
   return (

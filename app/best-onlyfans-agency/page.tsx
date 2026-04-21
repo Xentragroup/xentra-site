@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: "Best OnlyFans Agency — What to Look For (and What to Avoid)",
   description:
     "Most OnlyFans agencies overpromise and underdeliver. Here's how to identify the best OnlyFans agency for your situation — and the red flags that should make you walk away.",
+  alternates: { canonical: "/best-onlyfans-agency" },
+  openGraph: {
+    title: "Best OnlyFans Agency — What to Look For (and What to Avoid)",
+    description:
+      "Most OnlyFans agencies overpromise and underdeliver. Here's how to identify the best OnlyFans agency for your situation — and the red flags that should make you walk away.",
+    url: "/best-onlyfans-agency",
+    siteName: "Xentra Group",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best OnlyFans Agency — What to Look For (and What to Avoid)",
+    description:
+      "Most OnlyFans agencies overpromise and underdeliver. Here's how to identify the best OnlyFans agency for your situation — and the red flags that should make you walk away.",
+  },
 };
 
 export default function Page() {

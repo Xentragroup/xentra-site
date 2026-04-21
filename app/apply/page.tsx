@@ -4,7 +4,23 @@ import ApplyForm from "./ApplyForm";
 
 export const metadata: Metadata = {
   title: "Apply — Xentra Group",
-  description: "Apply to work with Xentra Group and take your OnlyFans income seriously.",
+  description:
+    "Apply to work with Xentra Group and take your OnlyFans income seriously.",
+  alternates: { canonical: "/apply" },
+  openGraph: {
+    title: "Apply — Xentra Group",
+    description:
+      "Apply to work with Xentra Group and take your OnlyFans income seriously.",
+    url: "/apply",
+    siteName: "Xentra Group",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Apply — Xentra Group",
+    description:
+      "Apply to work with Xentra Group and take your OnlyFans income seriously.",
+  },
 };
 
 export default function ApplyPage() {
