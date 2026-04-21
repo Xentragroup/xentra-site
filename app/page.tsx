@@ -25,6 +25,11 @@ export const metadata: Metadata = {
 
 const services = [
   {
+    label: "Video & Editing",
+    title: "Dedicated editing team — just upload and we handle the rest",
+    desc: "Drop your raw content into your dedicated folder and our editing team handles everything: cuts, captions, formatting, and platform-specific posting across TikTok, Instagram, and more.",
+  },
+  {
     label: "Chat & Sales",
     title: "24/7 fan chat that actually converts",
     desc: "PPV, customs, upsells, and renewals handled around the clock by a team that knows how to make subscribers spend and come back — not just reply.",
@@ -182,10 +187,10 @@ function WorkflowArrowDown() {
 }
 
 const workflowSteps = [
-  { who: "You", action: "Create content", sub: "Videos, photos, your presence" },
-  { who: "Xentra", action: "Build your audience", sub: "TikTok, Instagram, Reddit daily" },
-  { who: "Xentra", action: "Convert followers", sub: "Warm leads → subscribers" },
-  { who: "Xentra", action: "Maximise revenue", sub: "Chat, PPV, upsells, retention" },
+  { who: "You", action: "Upload raw content", sub: "Drop files into your dedicated folder — that's it" },
+  { who: "Xentra", action: "Edit & produce", sub: "Cuts, captions, formatting done for you" },
+  { who: "Xentra", action: "Post across platforms", sub: "TikTok, Instagram, Reddit — scheduled daily" },
+  { who: "Xentra", action: "Convert & maximise", sub: "Chat, PPV, upsells, retention managed 24/7" },
   { who: "Both", action: "Income compounds", sub: "Every month builds on the last" },
 ];
 
@@ -204,7 +209,7 @@ export default function HomePage() {
           </h1>
           <p className="text-gray-500 text-xl leading-relaxed max-w-xl mb-10">
             Bad agency experience? Same story we hear every week. Management done correctly —
-            strategy, brand, chat, growth, and retention all working together.
+            dedicated editing, posting, chat, growth, and retention. All you do is upload.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link
@@ -242,6 +247,58 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Just upload callout ── */}
+      <section className="bg-gray-50 border-t border-gray-100">
+        <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-rose-500 mb-4">
+                The simplest part of working with us
+              </p>
+              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 mb-5 leading-snug">
+                All you have to do is upload.
+              </h2>
+              <p className="text-gray-500 leading-relaxed mb-6">
+                Every creator we work with gets a dedicated content folder. You upload your raw
+                footage — our editing team handles the rest. Cuts, captions, formatting, and
+                platform-specific posting across TikTok, Instagram, and wherever your audience is.
+                No editing skills required. No posting schedule to manage. Just create.
+              </p>
+              <p className="text-gray-900 font-medium text-sm">
+                Your only job is to show up and create content. We do everything else.
+              </p>
+            </div>
+            <div className="space-y-3">
+              {[
+                {
+                  step: "01",
+                  title: "You upload raw content",
+                  desc: "Drop videos or photos into your dedicated folder — no formatting needed.",
+                },
+                {
+                  step: "02",
+                  title: "Our editing team produces it",
+                  desc: "Cuts, captions, colour grading, and platform-specific formatting handled for you.",
+                },
+                {
+                  step: "03",
+                  title: "We post it across your platforms",
+                  desc: "Scheduled and posted to TikTok, Instagram, and other relevant platforms daily.",
+                },
+              ].map((item) => (
+                <div key={item.step} className="flex gap-4 bg-white rounded-2xl border border-gray-100 p-5 shadow-sm">
+                  <span className="text-2xl font-light text-rose-200 shrink-0 w-8">{item.step}</span>
+                  <div>
+                    <p className="font-semibold text-gray-900 text-sm mb-1">{item.title}</p>
+                    <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Agency-Creator Relationship ── */}
       <section className="bg-white border-t border-gray-100">
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
@@ -266,7 +323,7 @@ export default function HomePage() {
               </p>
               <ul className="space-y-3">
                 {[
-                  "Your content and creative vision",
+                  "Your raw content — uploaded to your dedicated folder",
                   "Your personality and authentic voice",
                   "Your existing audience and platform presence",
                   "Your ambition and commitment to growth",
@@ -284,10 +341,10 @@ export default function HomePage() {
               </p>
               <ul className="space-y-3">
                 {[
-                  "Strategy, structure, and a clear growth roadmap",
+                  "A dedicated editing team — your raw footage, fully produced",
+                  "Daily posting across TikTok, Instagram, and more",
                   "24/7 chat management and revenue maximisation",
-                  "Brand building and positioning expertise",
-                  "Retention systems that compound your income",
+                  "Strategy, brand building, and retention systems",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-gray-300">
                     <span className="w-1.5 h-1.5 rounded-full bg-rose-400 shrink-0 mt-2" />
